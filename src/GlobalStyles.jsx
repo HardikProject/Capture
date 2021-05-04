@@ -43,6 +43,7 @@ const GlobalStyles = createGlobalStyle`
   --h3: 1.953rem;
   --h4: 1.563rem;
   --h5: 1.25rem;
+  --p:1.2rem;
 
   /* Difine Box box-shadowlevel */
   --level_1: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -61,12 +62,17 @@ const GlobalStyles = createGlobalStyle`
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+p{
+  font-size:var(--p);
 }
 
 h1 {
@@ -89,10 +95,22 @@ h5 {
   font-size: var(--h5);
 }
 
+span{
+  color:var(--green);
+letter-spacing: .1em;
+text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  
+}
+
 .icon{
     width:3rem;
     height:3rem;
 }
+
 
 `;
 

@@ -1,12 +1,14 @@
 import React from 'react'
-import AboutSection from '../Components/AboutSection'
-import ServiceSection from '../Components/ServiceSection'
+import AboutSection from '../Components/AboutPage/AboutSection'
+import FaqSection from '../Components/AboutPage/FaqSection'
+import ServiceSection from '../Components/AboutPage/ServiceSection'
 
 function AboutUs() {
     return (
         <div>
             <AboutSection/>
             <ServiceSection/>
+            <FaqSection/>
         </div>
     )
 }

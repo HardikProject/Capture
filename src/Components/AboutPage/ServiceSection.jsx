@@ -1,10 +1,10 @@
 import React from 'react';
-import time from '../icon/chronometer.svg';
-import diaphragm from '../icon/diaphragm.svg';
-import partnership from '../icon/partnership.svg';
-import salary from '../icon/salary.svg';
-import home2 from '../img/home2.jpg';
-import Icon from './Icon';
+import time from '../../icon/chronometer.svg';
+import diaphragm from '../../icon/diaphragm.svg';
+import partnership from '../../icon/partnership.svg';
+import salary from '../../icon/salary.svg';
+import home2 from '../../img/home2.jpg';
+import Icon from '../../Components/smallHalper/Icon';
 
 function ServiceSection() {
   return (

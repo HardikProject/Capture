@@ -1,9 +1,10 @@
 import React from 'react';
-import home1 from '../img/home1.jpg'
+import home1 from '../../img/home1.jpg';
+import styled from 'styled-components';
 
-function AboutSection() {
+function AboutSection({ className }) {
   return (
-    <div>
+    <div className={className}>
       <div className="desciption">
         <div className="title">
           <div className="hide">
@@ -25,10 +26,14 @@ function AboutSection() {
         <button>Contact Us</button>
       </div>
       <div className="image">
-          <img src={home1} alt="Guy with Camera" />
+        <img src={home1} alt="Guy with Camera" />
       </div>
     </div>
   );
 }
 
-export default AboutSection;
+const StyledAboutSection = styled(AboutSection)`
+  min-height: 90vh;
+`;
+
+export default StyledAboutSection;

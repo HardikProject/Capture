@@ -48,16 +48,15 @@ function ServiceSection({ className }) {
 const StyledServiceSection = styled(ServiceSection)`
   display: flex;
   flex-direction: row-reverse;
-  min-height: 100vh;
+  max-height: 100vh;
   width: 100%;
   .discription {
     flex: 1.7;
     h2 {
       text-align: center;
-      padding: 2rem;
+      /* padding: 2rem; */
       height: 10%;
     }
-    border: 1px solid red;
   }
 
   .cards {
@@ -69,10 +68,9 @@ const StyledServiceSection = styled(ServiceSection)`
     height: 90%;
   }
   .image {
-    border: 1px solid red;
     flex: 1;
   }
-  padding: 5rem 10rem;
+  padding: 5rem 5rem;
 `;
 
 export default StyledServiceSection;

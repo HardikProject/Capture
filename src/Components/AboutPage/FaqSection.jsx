@@ -1,9 +1,10 @@
 import React from 'react';
 import QNA from '../smallHalper/QNA';
+import styled from 'styled-components';
 
-const FaqSection = () => {
+const FaqSection = ({ className }) => {
   return (
-    <div className="faq">
+    <div className={className}>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -35,4 +36,18 @@ const FaqSection = () => {
   );
 };
 
-export default FaqSection;
+const StyledFaqSections = styled(FaqSection)`
+  margin: 0 auto;
+  margin-bottom:2rem;
+  width: 70%;
+  h2{
+    text-align: center;
+    border-bottom: 10px solid #52a752;
+    border-radius:0.3rem;
+    border-width:50%;
+    display: inline-block;
+    padding: 0.4rem;
+  }
+`;
+
+export default StyledFaqSections;

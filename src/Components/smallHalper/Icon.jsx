@@ -25,9 +25,15 @@ const StyledIcon = styled(Icon)`
   .head {
     align-items: center;
     h4 {
-      background-color: #79bcd1;
+      background: linear-gradient(
+        250.56deg,
+        #2fc6ab 51.28%,
+        rgba(196, 196, 196, 0) 51.29%
+      );
+
       padding: 0.5rem 1rem;
       border-radius: 0.3rem;
+      
     }
     display: flex;
     justify-content: space-around;

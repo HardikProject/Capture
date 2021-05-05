@@ -5,42 +5,74 @@ import partnership from '../../icon/partnership.svg';
 import salary from '../../icon/salary.svg';
 import home2 from '../../img/home2.jpg';
 import Icon from '../../Components/smallHalper/Icon';
+import styled from 'styled-components';
+import {Image } from '../elements';
 
-function ServiceSection() {
+function ServiceSection({ className }) {
   return (
-    <div className="services">
+    <div className={className}>
       <div className="discription">
         <h2>
-          High <span>quality</span> services
+          High <span>Quality</span> services
         </h2>
-        <div className="card">
+        <div className="cards">
           <Icon
             text="Efficient"
             icon={time}
-            desc=" Lorem ipsum dolor sit amet."
+            desc=" Lorem ipsum dolor sit amet.Lorem ipsum "
           />
           <Icon
             text="TeamWork"
             icon={partnership}
-            desc=" Lorem ipsum dolor sit amet."
+            desc=" Lorem ipsum dolor sit amet.Lorem ipsum "
           />
           <Icon
             text="Diaphragm"
             icon={diaphragm}
-            desc=" Lorem ipsum dolor sit amet."
+            desc=" Lorem ipsum dolor sit amet.Lorem ipsum "
           />
           <Icon
             text="Affordable"
             icon={salary}
-            desc=" Lorem ipsum dolor sit amet."
+            desc=" Lorem ipsum dolor sit amet.Lorem ipsum "
           />
         </div>
       </div>
       <div className="image">
-        <img src={home2} alt="camera" />
+        <Image src={home2} alt="camera" />
       </div>
     </div>
   );
 }
 
-export default ServiceSection;
+const StyledServiceSection = styled(ServiceSection)`
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 100vh;
+  width: 100%;
+  .discription {
+    flex: 1.7;
+    h2 {
+      text-align: center;
+      padding: 2rem;
+      height: 10%;
+    }
+    border: 1px solid red;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+    height: 90%;
+  }
+  .image {
+    border: 1px solid red;
+    flex: 1;
+  }
+  padding: 5rem 10rem;
+`;
+
+export default StyledServiceSection;

@@ -73,6 +73,7 @@ html {
 
 p{
   font-size:var(--p);
+  line-height:1.5;
 }
 
 h1 {
@@ -103,7 +104,10 @@ text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 
 
 body{
   font-family: 'Nunito', sans-serif;
-  
+  background: #fffdfd;
+  color:black;
+  padding:0 5%;
+  margin: 0 auto;
 }
 
 .icon{

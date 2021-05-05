@@ -1,7 +1,7 @@
 import React from 'react';
 import home1 from '../../img/home1.jpg';
 import styled from 'styled-components';
-import { Button ,Image } from '../elements';
+import { Button, Image} from '../elements';
 
 function AboutSection({ className }) {
   return (
@@ -37,45 +37,26 @@ const StyledAboutSection = styled(AboutSection)`
   max-height: 90vh;
   .desciption {
     /* border:5px solid red; */
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    flex:1.5;
-    p{
-      width:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1.5;
+    p {
+      width: 70%;
     }
   }
 
   .image {
-    flex:1;
-    img{
-      
-    }
+    flex: 1;
   }
-
-  background: linear-gradient(
-      284.41deg,
-      #adefd1 34.19%,
-      #413e60 34.19%,
-      rgba(255, 255, 255, 0) 34.24%
-    ),
-    linear-gradient(
-      284.85deg,
-      #ffffff 33.02%,
-      rgba(199, 20, 20, 0) 33.02%,
-      rgba(20, 21, 41, 0) 33.03%,
-      rgba(199, 20, 20, 0) 33.04%
-    ),
-    linear-gradient(287.95deg, #00203f 100.48%, rgba(0, 0, 0, 0) 100.49%);
 
   display: flex;
   padding: 5rem 10rem;
-  padding-left:17rem;
-  color: #ddd6d6;
+  padding-left: 13rem;
   font-family: 'Rubik', sans-serif;
-
-  ${Button}{
-    width:30%;
+  color: #363636;
+  ${Button} {
+    width: 30%;
   }
 `;
 

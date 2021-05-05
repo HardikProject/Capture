@@ -52,7 +52,7 @@ const StyledAboutSection = styled(AboutSection)`
 
   display: flex;
   padding: 5rem 10rem;
-  padding-left: 13rem;
+  padding-left: 10rem;
   font-family: 'Rubik', sans-serif;
   color: #363636;
   ${Button} {

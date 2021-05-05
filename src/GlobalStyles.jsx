@@ -103,11 +103,22 @@ text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 
 }
 
 body{
+  /* *{
+    border: 1px solid #544661;
+  } */
   font-family: 'Nunito', sans-serif;
   background: #fffdfd;
   color:black;
   padding:0 5%;
   margin: 0 auto;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #494848;
+  border-radius: 1rem;
 }
 
 .icon{

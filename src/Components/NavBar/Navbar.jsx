@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function Navbar({ className }) {
   return (
@@ -8,19 +9,13 @@ function Navbar({ className }) {
         <img src="https://img.icons8.com/plasticine/70/000000/camera--v2.png" />
         <ul>
           <li>
-            <a href="http://" target="_blank">
-              About Us
-            </a>
+            <Link to="/">About Us</Link>
           </li>
           <li>
-            <a href="http://" target="_blank">
-              Our Work
-            </a>
+            <Link to="/work">Our Work</Link>
           </li>
           <li>
-            <a href="http://" target="_blank">
-              Contect Us
-            </a>
+            <Link to="/contect">Contect Us</Link>
           </li>
         </ul>
       </nav>
@@ -38,20 +33,20 @@ const StyledNavbar = styled(Navbar)`
     align-items: center;
   }
   img {
-      cursor: pointer;
-      margin-left:2rem;
+    cursor: pointer;
+    margin-left: 2rem;
   }
   ul {
-      width: 60%;
+    width: 60%;
     text-decoration: none;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
   }
-  li a{
-      text-decoration: none;
-      font-size:1.4rem;
-      font-weight:700;
+  li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
   }
 `;
 

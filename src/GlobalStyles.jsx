@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+
+/* Global Styles  */
+
 /* Variables Declaratin */
 :root {
   /* Define color */
@@ -38,12 +41,12 @@ const GlobalStyles = createGlobalStyle`
   --white: #fff;
 
   /*Define Colors Intentions */
-  --h1: 3.052rem;
-  --h2: 2.441rem;
-  --h3: 1.953rem;
-  --h4: 1.563rem;
-  --h5: 1.25rem;
-  --p:1.2rem;
+  --h1:clamp(1.8rem, 4.5vw, 3.052rem);
+    --h2:clamp(1.5rem, 4vw, 2.441rem);
+    --h3:clamp(1.4rem, 3vw, 1.953rem);
+    --h4:clamp(1.2rem, 2vw, 1.563rem);
+    --h5:clamp(1.1rem, 2vw, 1.25rem);
+    --p:clamp(1rem , 3vw, 1.2rem);
 
   /* Difine Box box-shadowlevel */
   --level_1: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -58,22 +61,8 @@ const GlobalStyles = createGlobalStyle`
 
 /* End of Variables Declaratin */
 
-/*Basic CSS */
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-}
-
 p{
   font-size:var(--p);
-  line-height:1.5;
 }
 
 h1 {
@@ -96,16 +85,96 @@ h5 {
   font-size: var(--h5);
 }
 
-span{
-  color:var(--green);
-letter-spacing: .1em;
-text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
+
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// Scroll Bar for
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #646262;
+  border-radius: 0.5rem;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* End of Global Styles  */
+
 body{
-  /* *{
-    border: 1px solid #544661;
-  } */
   font-family: 'Nunito', sans-serif;
   background: #fffdfd;
   color:black;
@@ -113,19 +182,19 @@ body{
   margin: 0 auto;
 }
 
-*::-webkit-scrollbar {
-  width: 7px;
-}
-*::-webkit-scrollbar-thumb {
-  background: #494848;
-  border-radius: 1rem;
+span{
+  color:var(--green);
+letter-spacing: .1em;
+text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
 }
 
+*{
+  border: 1px solid #546541;
+}
 .icon{
     width:3rem;
     height:3rem;
 }
-
 
 `;
 

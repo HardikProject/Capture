@@ -27,7 +27,7 @@ function AboutSection({ className }) {
         <Button>Contact Us</Button>
       </div>
       <div className="image">
-        <Image src={home1} alt="Guy with Camera" />
+        <Image src={home1} alt="Guy with Camera"/>
       </div>
     </div>
   );
@@ -48,16 +48,18 @@ const StyledAboutSection = styled(AboutSection)`
 
   .image {
     flex: 1;
+    padding:clamp(0.5rem, 8vw - 2rem, 3.052rem)
   }
 
   display: flex;
-  padding: 5rem 10rem;
-  padding-left: 10rem;
+  /* padding: 5rem 10rem;
+  padding-left: 10rem; */
   font-family: 'Rubik', sans-serif;
   color: #363636;
   ${Button} {
     width: 30%;
   }
+
 `;
 
 export default StyledAboutSection;

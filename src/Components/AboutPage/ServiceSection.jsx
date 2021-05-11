@@ -48,7 +48,7 @@ function ServiceSection({ className }) {
 const StyledServiceSection = styled(ServiceSection)`
   display: flex;
   flex-direction: row-reverse;
-  max-height: 100vh;
+  min-height: 100vh;
   width: 100%;
   .discription {
     flex: 1.7;
@@ -70,7 +70,7 @@ const StyledServiceSection = styled(ServiceSection)`
   .image {
     flex: 1;
   }
-  padding: 5rem 5rem;
+  /* padding: 5rem 5rem; */
 `;
 
 export default StyledServiceSection;

@@ -12,23 +12,38 @@ const FaqSection = ({ className }) => {
         question="How Do I Start?"
         a1="Lorem ipsum dolor sit amet."
         a2="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus, neque."
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.  "
       />
       <QNA
         question="Daily Schedule"
         a1="Lorem ipsum dolor sit amet."
         a2="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Necessitatibus, neque."
       />
       <QNA
         question="Diferrent Payment Methods"
         a1="Lorem ipsum dolor sit amet."
         a2="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Necessitatibus, neque."
       />
       <QNA
         question="What Products do you offer."
-        a1="Lorem ipsum dolor sit amet."
+        a1="Lorem ipsum dolor sit amet.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, neque."
         a2="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Necessitatibus, neque."
       />

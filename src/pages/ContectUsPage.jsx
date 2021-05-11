@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ContectUs() {
+function ContectUsPage() {
     return (
         <div>
             <h1>Contect</h1>
@@ -8,4 +8,4 @@ function ContectUs() {
     )
 }
 
-export default ContectUs
+export default ContectUsPage

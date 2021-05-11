@@ -1,27 +1,31 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route,useLocation} from 'react-router-dom';
 import Navbar from './Components/NavBar/Navbar';
 import GlobalStyles from './GlobalStyles';
-import AboutUs from './pages/AboutUs';
-import OurWork from './pages/OurWork';
-import ContectUs from './pages/ContectUs';
+import AboutUsPage from './pages/AboutUsPage';
+import OurWorkPage from './pages/OurWorkPage.jsx';
+import ContectUsPage from './pages/ContectUsPage';
+import {AnimatePresence} from 'framer-motion'
 
 function App() {
+  const location = useLocation()
   return (
     <div className="App">
       <GlobalStyles />
       <Navbar />
-      <Switch>
+      <AnimatePresence exitBeforeEnter >
+      <Switch location={location} key={location.pathname} >
         <Route path="/" exact>
-          <AboutUs />
+          <AboutUsPage />
         </Route>
-        <Route path="/work">
-          <OurWork />
+        <Route path="/ourwork">
+          <OurWorkPage />
         </Route>
         <Route path="/contect">
-          <ContectUs />
+          <ContectUsPage />
         </Route>
       </Switch>
+      </AnimatePresence>
     </div>
   );
 }

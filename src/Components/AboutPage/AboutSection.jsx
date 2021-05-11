@@ -1,25 +1,33 @@
 import React from 'react';
 import home1 from '../../img/home1.jpg';
 import styled from 'styled-components';
-import { Button, Image} from '../elements';
+import { Button, Image } from '../elements';
+import { motion } from 'framer-motion';
+import { textAnimation } from '../../Animation';
 
 function AboutSection({ className }) {
   return (
     <div className={className}>
       <div className="desciption">
-        <div className="title">
-          <div className="hide">
+        <motion.div
+          initial="close"
+          animate="open"
+          exit="close"
+          transition={{ staggerChildren: 0.5 }}
+          className="title"
+        >
+          <motion.div variants={textAnimation} className="hide">
             <h1>We Work To Make</h1>
-          </div>
-          <div className="hide">
+          </motion.div>
+          <motion.div variants={textAnimation} className="hide">
             <h1>
               your <span>dreams</span>
             </h1>
-          </div>
-          <div className="hide">
+          </motion.div>
+          <motion.div variants={textAnimation} className="hide">
             <h1>Come True</h1>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <p>
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
@@ -27,20 +35,21 @@ function AboutSection({ className }) {
         <Button>Contact Us</Button>
       </div>
       <div className="image">
-        <Image src={home1} alt="Guy with Camera"/>
+        <Image src={home1} alt="Guy with Camera" />
       </div>
     </div>
   );
 }
 
 const StyledAboutSection = styled(AboutSection)`
-  max-height: 90vh;
+  min-height: 90vh;
   .desciption {
     /* border:5px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex: 1.5;
+    align-items: center;
+    flex: 1.8;
     p {
       width: 70%;
     }
@@ -48,18 +57,22 @@ const StyledAboutSection = styled(AboutSection)`
 
   .image {
     flex: 1;
-    padding:clamp(0.5rem, 8vw - 2rem, 3.052rem)
   }
 
   display: flex;
-  /* padding: 5rem 10rem;
-  padding-left: 10rem; */
+  padding: 2vw 3.2vw;
   font-family: 'Rubik', sans-serif;
   color: #363636;
+  flex-wrap: wrap;
   ${Button} {
     width: 30%;
   }
-
+  @media screen and (max-width: 1000px) {
+    ${Button} {
+      width: 80%;
+    }
+    min-height: 60vh;
+  }
 `;
 
 export default StyledAboutSection;
